@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply text-black;
+    }
+
+    h1 {
+        @apply text-3xl sm:text-4xl md:text-5xl mb-4 font-bold;
+    }
+    h2 {
+        @apply text-2xl lg:text-3xl font-bold mb-3;
+    }
+    h3 {
+        @apply text-2xl font-bold mb-3;
+    }
+    h4 {
+        @apply text-xl font-bold mb-3;
+    }
+    h5{
+        @apply text-sm font-bold capitalize;
+    }
+    h6{
+        @apply font-medium text-sm uppercase text-primary mb-1;
+    }
+
+    p{
+        @apply opacity-60 text-base;
+    }
+
+    .blogContent{
+        @apply font-serif text-base sm:text-xl;
+    }
+
+    .blogContent blockquote{
+        @apply italic pl-5 border-l-2 border-primary mb-8 opacity-90;
+    }
+
+    .blogContent ul{
+        @apply mb-8 list-disc pl-6 ml-4 opacity-90;
+    }
+
+    .blogContent p{
+        @apply mb-8 text-xl opacity-90 leading-relaxed;
+    }
+
+    .blogContent span{
+        @apply text-black font-bold;
+    }
+
+    .blogContent span.box{
+        @apply inline-block px-2 border border-gray-300 bg-gray-200 rounded-md;
+    }
+
+    .blogContent a{
+        @apply text-primary underline;
+    }
+
+    .blogContent blockquote{
+        @apply mb-8;
+    }
+
+    .blogContent img{
+        @apply mt-2 mb-10;
+    }
+  }
